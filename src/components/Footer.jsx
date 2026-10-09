@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { ArrowUp } from 'lucide-react';
+import { ArrowUp, ArrowUpRight } from 'lucide-react';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -55,7 +55,17 @@ export default function Footer() {
                 <li><a href="#campus" className="hover:text-slate-900">Ice Bath & Gym</a></li>
                 <li><a href="#campus" className="hover:text-slate-900">Skate Ramp & Wi-Fi</a></li>
                 <li><a href="#academy" className="hover:text-slate-900">Pro Kayak Academy</a></li>
-                <li><a href="https://bookingsutra.com/kayakboy-surf-club" target="_blank" rel="noreferrer" className="hover:text-slate-900 font-semibold text-slate-700">BookingSutra Portal ↗</a></li>
+                <li>
+                  <a
+                    href="https://bookingsutra.com/kayakboy-surf-club"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1 hover:text-slate-900 font-semibold text-slate-700"
+                  >
+                    <span>BookingSutra Portal</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                  </a>
+                </li>
                 <li><a href="#faq" className="hover:text-slate-900">FAQs</a></li>
               </ul>
             </div>
@@ -64,23 +74,46 @@ export default function Footer() {
               <span className="font-bold text-slate-900 block mb-2.5">Visit & Connect</span>
               <ul className="space-y-1.5 text-slate-500">
                 <li>
-                  <a href="https://maps.app.goo.gl/meHJH5jFaAwCADLz5" target="_blank" rel="noreferrer" className="hover:text-slate-900">
-                    Mulki, Karnataka ↗
+                  <a
+                    href="https://maps.app.goo.gl/meHJH5jFaAwCADLz5"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1 hover:text-slate-900"
+                  >
+                    <span>Mulki, Karnataka</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 shrink-0" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://wa.me/918722846295" target="_blank" rel="noreferrer" className="hover:text-slate-900">
+                  <a
+                    href="https://wa.me/918722846295"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-slate-900"
+                  >
                     +91 8722846295
                   </a>
                 </li>
                 <li>
-                  <a href="https://instagram.com/mulki.in" target="_blank" rel="noreferrer" className="hover:text-slate-900">
-                    @mulki.in ↗
+                  <a
+                    href="https://instagram.com/mulki.in"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1 hover:text-slate-900"
+                  >
+                    <span>@mulki.in</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 shrink-0" />
                   </a>
                 </li>
                 <li>
-                  <a href="https://instagram.com/kayak.boy" target="_blank" rel="noreferrer" className="hover:text-slate-900">
-                    @kayak.boy ↗
+                  <a
+                    href="https://instagram.com/kayak.boy"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1 hover:text-slate-900"
+                  >
+                    <span>@kayak.boy</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 shrink-0" />
                   </a>
                 </li>
               </ul>

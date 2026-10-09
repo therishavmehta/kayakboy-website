@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { FAQS } from '../data/courses';
-import { Plus, Minus, MapPin, MessageCircle } from 'lucide-react';
+import { Plus, Minus, MapPin, MessageCircle, ArrowUpRight } from 'lucide-react';
 
 export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState(0);
@@ -34,10 +34,11 @@ export default function FaqSection() {
                 href="https://maps.app.goo.gl/meHJH5jFaAwCADLz5"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 text-xs font-semibold text-slate-800 hover:text-slate-900"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-800 hover:text-slate-900"
               >
                 <MapPin className="w-4 h-4 text-slate-500" />
-                <span>Mulki, Karnataka (Google Maps) ↗</span>
+                <span>Mulki, Karnataka (Google Maps)</span>
+                <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 shrink-0" />
               </a>
 
               <div>

@@ -12,7 +12,7 @@ import StoriesAndPress from './StoriesAndPress';
 import FaqSection from './FaqSection';
 import Footer from './Footer';
 import { BOOKINGSUTRA_CLUB_URL } from '../data/courses';
-import { MessageCircle } from 'lucide-react';
+import { MessageCircle, ArrowUpRight } from 'lucide-react';
 
 export default function KayakBoyApp() {
   const handleScrollTo = (elementId) => {
@@ -65,9 +65,10 @@ export default function KayakBoyApp() {
           href={BOOKINGSUTRA_CLUB_URL}
           target="_blank"
           rel="noreferrer"
-          className="flex-1 bg-slate-900 text-white font-semibold py-2.5 rounded-xl text-xs flex items-center justify-center cursor-pointer"
+          className="flex-1 bg-slate-900 text-white font-semibold py-2.5 rounded-xl text-xs flex items-center justify-center gap-1 cursor-pointer"
         >
-          Book on BookingSutra ↗
+          <span>Book on BookingSutra</span>
+          <ArrowUpRight className="w-3.5 h-3.5" />
         </a>
       </div>
     </div>

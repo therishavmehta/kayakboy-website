@@ -110,9 +110,10 @@ export default function Navbar() {
               target="_blank"
               rel="noreferrer"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full bg-slate-900 text-white font-medium text-xs py-2.5 rounded-xl text-center block cursor-pointer"
+              className="w-full bg-slate-900 text-white font-medium text-xs py-2.5 rounded-xl flex items-center justify-center gap-1 cursor-pointer"
             >
-              Book on BookingSutra ↗
+              <span>Book on BookingSutra</span>
+              <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
             <a
               href="https://wa.me/918722846295"
