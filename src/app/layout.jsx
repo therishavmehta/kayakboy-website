@@ -125,7 +125,7 @@ export default function RootLayout({ children }) {
         price: '1750',
         priceCurrency: 'INR',
         availability: 'https://schema.org/InStock',
-        url: 'https://www.kayakboy.in/#surfing'
+        url: 'https://bookingsutra.com/kayakboy-surf-club/events/cmuy8s2b300pcqfjvkowp1421'
       },
       {
         '@type': 'Offer',
@@ -133,23 +133,47 @@ export default function RootLayout({ children }) {
         price: '7100',
         priceCurrency: 'INR',
         availability: 'https://schema.org/InStock',
-        url: 'https://www.kayakboy.in/#surfing'
+        url: 'https://bookingsutra.com/kayakboy-surf-club/events/cmuy8rwf3000hqfjvqpehe3kz'
       },
       {
         '@type': 'Offer',
-        name: '5-Day Complete Surf Immersion Course',
+        name: '5-Day Surfing, Stay + Wellness',
         price: '11000',
         priceCurrency: 'INR',
         availability: 'https://schema.org/InStock',
-        url: 'https://www.kayakboy.in/#surfing'
+        url: 'https://bookingsutra.com/kayakboy-surf-club/events/cmuy8ryqp00awqfjv3hkls8k7'
       },
       {
         '@type': 'Offer',
-        name: 'River Shambhavi Island Kayaking Tour',
-        price: '500',
+        name: '7-Day Surfing, Stay + Wellness',
+        price: '15500',
         priceCurrency: 'INR',
         availability: 'https://schema.org/InStock',
-        url: 'https://www.kayakboy.in/#kayaking'
+        url: 'https://bookingsutra.com/kayakboy-surf-club/events/cmuy8s0u600l7qfjvutfe7gqt'
+      },
+      {
+        '@type': 'Offer',
+        name: 'Mulki 1-Hour Backwater Kayak Tour',
+        price: '400',
+        priceCurrency: 'INR',
+        availability: 'https://schema.org/InStock',
+        url: 'https://bookingsutra.com/kayakboy-surf-club/events/cmuy8s3av00qzqfjvyyu7zvp8'
+      },
+      {
+        '@type': 'Offer',
+        name: 'Wake Surfing using Motorboat',
+        price: '885',
+        priceCurrency: 'INR',
+        availability: 'https://schema.org/InStock',
+        url: 'https://bookingsutra.com/kayakboy-surf-club/events/cmuy8s56o00z2qfjvie2yez8f'
+      },
+      {
+        '@type': 'Offer',
+        name: 'Bioluminescence Kayaking',
+        price: '750',
+        priceCurrency: 'INR',
+        availability: 'https://schema.org/InStock',
+        url: 'https://bookingsutra.com/kayakboy-surf-club/events/cmuy8s60c00z5qfjvv3421saj'
       }
     ]
   };

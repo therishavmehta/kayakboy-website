@@ -36,23 +36,26 @@ export default function Footer({ onOpenBooking }) {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 text-xs">
             <div>
-              <span className="font-bold text-slate-900 block mb-2.5">Programs</span>
+              <span className="font-bold text-slate-900 block mb-2.5">Surf & Water Programs</span>
               <ul className="space-y-1.5 text-slate-500">
-                <li><a href="#surfing" className="hover:text-slate-900">1-Day Intro Surf</a></li>
-                <li><a href="#surfing" className="hover:text-slate-900">3-Day Surf + Stay</a></li>
-                <li><a href="#surfing" className="hover:text-slate-900">5-Day Immersion</a></li>
-                <li><a href="#kayaking" className="hover:text-slate-900">River Shambhavi</a></li>
-                <li><a href="#academy" className="hover:text-slate-900">Pro Sea Academy</a></li>
+                <li><a href="#surfing" className="hover:text-slate-900">1-Day Intro Surf (₹1,750)</a></li>
+                <li><a href="#surfing" className="hover:text-slate-900">3-Day Surf + Stay (₹7,100)</a></li>
+                <li><a href="#surfing" className="hover:text-slate-900">5-Day Immersion (₹11,000)</a></li>
+                <li><a href="#surfing" className="hover:text-slate-900">7-Day Transformation (₹15,500)</a></li>
+                <li><a href="#kayaking" className="hover:text-slate-900">1-Hr Mangrove Kayak (₹400)</a></li>
+                <li><a href="#kayaking" className="hover:text-slate-900">Wake Surfing (₹885)</a></li>
+                <li><a href="#kayaking" className="hover:text-slate-900">Bioluminescence (₹750)</a></li>
               </ul>
             </div>
 
             <div>
-              <span className="font-bold text-slate-900 block mb-2.5">Clubhouse</span>
+              <span className="font-bold text-slate-900 block mb-2.5">Clubhouse & Stays</span>
               <ul className="space-y-1.5 text-slate-500">
                 <li><a href="#campus" className="hover:text-slate-900">A/C Dorms & Rooms</a></li>
                 <li><a href="#campus" className="hover:text-slate-900">Ice Bath & Gym</a></li>
                 <li><a href="#campus" className="hover:text-slate-900">Skate Ramp & Wi-Fi</a></li>
-                <li><a href="#river-story" className="hover:text-slate-900">Hidden Beach</a></li>
+                <li><a href="#academy" className="hover:text-slate-900">Pro Kayak Academy</a></li>
+                <li><a href="https://bookingsutra.com/kayakboy-surf-club" target="_blank" rel="noreferrer" className="hover:text-slate-900 font-semibold text-slate-700">BookingSutra Portal ↗</a></li>
                 <li><a href="#faq" className="hover:text-slate-900">FAQs</a></li>
               </ul>
             </div>

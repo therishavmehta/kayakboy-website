@@ -1,110 +1,180 @@
-// Concise, authentic data for KayakBoy Surf Club
-// Retains all actual prices, tiers, and specs from kayakboy.in & ticketshifu.com without fluff.
+// Authentic data for KayakBoy Surf Club
+// Direct integration with BookingSutra (https://bookingsutra.com/kayakboy-surf-club)
+// Exact prices, advance deposits, tiers, and slot details.
+
+export const BOOKINGSUTRA_CLUB_URL = "https://bookingsutra.com/kayakboy-surf-club";
 
 export const SURF_COURSES = [
   {
-    id: "surf-1-day",
-    title: "1-Day Intro Surf",
-    subtitle: "First time on a surfboard? Learn fundamentals in warm, waist-deep waves.",
+    id: "cmuy8s2b300pcqfjvkowp1421",
+    bsEventId: "cmuy8s2b300pcqfjvkowp1421",
+    title: "1-Day Introductory Surf Lesson",
+    subtitle: "First time on a surfboard? Learn ocean safety, pop-up mechanics, and ride white water in waist-deep waves.",
     tag: "Beginner Friendly",
-    duration: "2.5 Hours",
-    timing: "7:00 AM – 9:30 AM",
+    duration: "3 Hours",
+    timing: "Daily 6:30 AM – 11:00 AM",
     price: 1750,
     advance: 750,
     venuePay: 1000,
-    image: "/assets/surfing_one_day_intro.jpg",
-    ticketShifuUrl: "https://ticketshifu.com/tickets/one-day-surfing-mulki-india",
+    image: "/assets/bs_surf_1day.jpg",
+    bookingUrl: "https://bookingsutra.com/kayakboy-surf-club/events/cmuy8s2b300pcqfjvkowp1421",
     perks: [
-      "No swimming required (shallow sandbar)",
-      "Board, leash & rashguard included",
-      "Wave reading, safety & pop-up coaching",
-      "Clubhouse shower & washroom access"
+      "No swimming required (waist-deep shallow sandbar)",
+      "1:2 coach-to-student ratio with certified instructors",
+      "Soft-top beginner board, leash & UV rashguard included",
+      "Theory, pop-up technique & assisted wave catching",
+      "Clubhouse washrooms, outdoor showers & gear lockers"
     ]
   },
   {
-    id: "surf-3-day",
-    title: "3-Day Surf + Stay",
-    subtitle: "Catch your own waves. 3 morning sessions plus 2 nights at the riverside club.",
-    tag: "Weekend Trip",
+    id: "cmuy8rwf3000hqfjvqpehe3kz",
+    bsEventId: "cmuy8rwf3000hqfjvqpehe3kz",
+    title: "3 Day Beginner Surfing, Stay + Wellness",
+    subtitle: "Catch your own waves. 3 morning surf sessions plus 2 nights at the riverside surf club with recovery pass.",
+    tag: "Weekend Immersion",
     duration: "3 Days / 2 Nights",
-    timing: "Daily 6:30 AM – 9:30 AM",
+    timing: "Daily 6:30 AM – 11:00 AM",
     price: 7100,
     advance: 1500,
     venuePay: 5600,
-    image: "/assets/three_days_beginner_surfing.jpg",
-    ticketShifuUrl: "https://ticketshifu.com/tickets/udupi-surfing",
+    image: "/assets/bs_surf_3day.jpg",
+    bookingUrl: "https://bookingsutra.com/kayakboy-surf-club/events/cmuy8rwf3000hqfjvqpehe3kz",
     tiers: [
-      { name: "A/C Mixed Dorm", total: 7100, advance: 1500, venue: 5600 },
-      { name: "Private Room", total: 16000, advance: 5500, venue: 10500 },
-      { name: "Private Room (Balcony)", total: 18500, advance: 6000, venue: 12500 }
+      { name: "A/C Mixed Dorm + Wellness", total: 7100, advance: 1500, venue: 5600 },
+      { name: "A/C Female Only Dorm + Wellness", total: 7600, advance: 1500, venue: 6100 },
+      { name: "Private Room without Balcony (2 Pax)", total: 16000, advance: 5500, venue: 10500 },
+      { name: "Private Room with Balcony (2 Pax)", total: 18500, advance: 6000, venue: 12500 }
     ],
     perks: [
-      "3 guided morning surf sessions",
-      "2 nights A/C accommodation",
-      "Daily technique review",
-      "Ice bath, gym, skate ramp & Wi-Fi"
+      "3 guided morning surf coaching sessions",
+      "2 nights riverside A/C stay (check-in after 12 PM)",
+      "Wellness pass (daily ice bath & recovery)",
+      "Stance refinement, wave selection & paddle power",
+      "Fiber Wi-Fi, skate mini-ramp, volleyball & workspace"
     ]
   },
   {
-    id: "surf-5-day",
-    title: "5-Day Surf Immersion",
-    subtitle: "Our flagship course. Progress from basic pop-ups to riding unbroken green waves.",
-    tag: "Most Recommended",
+    id: "cmuy8ryqp00awqfjv3hkls8k7",
+    bsEventId: "cmuy8ryqp00awqfjv3hkls8k7",
+    title: "5 Days Surfing, Stay + Wellness",
+    subtitle: "Our flagship course. Progress from basic pop-ups to reading swells and riding unbroken green waves independently.",
+    tag: "Flagship Course",
     duration: "5 Days / 4 Nights",
-    timing: "Daily 6:30 AM – 9:30 AM",
+    timing: "Daily 6:30 AM – 11:00 AM",
     price: 11000,
     advance: 2500,
     venuePay: 8500,
-    image: "/assets/five_days_surfing.jpg",
-    ticketShifuUrl: "https://ticketshifu.com/tickets/udupi-mangalore-surfing",
+    image: "/assets/bs_surf_5day.jpg",
+    bookingUrl: "https://bookingsutra.com/kayakboy-surf-club/events/cmuy8ryqp00awqfjv3hkls8k7",
     tiers: [
-      { name: "A/C Mixed Dorm", total: 11000, advance: 2500, venue: 8500 },
-      { name: "A/C Female Dorm", total: 12000, advance: 3000, venue: 9000 },
-      { name: "Private Room", total: 25600, advance: 7000, venue: 18600 },
-      { name: "Private Room (Balcony)", total: 30600, advance: 8000, venue: 22600 }
+      { name: "Surf Lessons Only (No Stay)", total: 7600, advance: 2500, venue: 5100 },
+      { name: "A/C Mixed Dorm + Wellness", total: 11000, advance: 2500, venue: 8500 },
+      { name: "A/C Female Only Dorm + Wellness", total: 12000, advance: 3000, venue: 9000 },
+      { name: "Private Room without Balcony (2 Pax)", total: 25600, advance: 7000, venue: 18600 },
+      { name: "Private Room with Balcony (2 Pax)", total: 30600, advance: 8000, venue: 22600 }
     ],
     perks: [
-      "5 guided surf sessions + daily video analysis",
-      "4 nights A/C stay + remote work setup",
-      "Green wave selection & turning technique",
-      "Free access to ice bath, gym & skate ramp"
+      "5 comprehensive morning surf coaching sessions",
+      "4 nights riverside A/C accommodation",
+      "Daily video review & biomechanics correction",
+      "Green wave angling, bottom turns & generating speed",
+      "Full wellness club pass (ice bath, gym & recovery lounge)"
+    ]
+  },
+  {
+    id: "cmuy8s0u600l7qfjvutfe7gqt",
+    bsEventId: "cmuy8s0u600l7qfjvutfe7gqt",
+    title: "7 Days Surfing, Stay + Wellness",
+    subtitle: "The complete transformation. 7 surf sessions and 6 nights riverside resort stay for serious, confident surfing.",
+    tag: "Complete Masterclass",
+    duration: "7 Days / 6 Nights",
+    timing: "Daily 6:30 AM – 11:00 AM",
+    price: 15500,
+    advance: 3500,
+    venuePay: 12000,
+    image: "/assets/bs_surf_7day.jpg",
+    bookingUrl: "https://bookingsutra.com/kayakboy-surf-club/events/cmuy8s0u600l7qfjvutfe7gqt",
+    tiers: [
+      { name: "A/C Mixed Dorm + Wellness", total: 15500, advance: 3500, venue: 12000 },
+      { name: "A/C Female Only Dorm + Wellness", total: 16500, advance: 3500, venue: 13000 }
+    ],
+    perks: [
+      "7 surf sessions (1 lesson/day) + 6 nights resort stay",
+      "Wave forecasting, marine swell reading & rip currents",
+      "Intensive trimming, directional control & cutbacks",
+      "Personalized coach mentoring & in-depth video feedback",
+      "Unlimited wellness club access, ice baths & community vibe"
     ]
   }
 ];
 
 export const KAYAK_TRIPS = [
   {
-    id: "kayak-intro",
-    title: "Island Paddle",
-    duration: "2 Hours (4 km)",
-    price: 500,
+    id: "cmuy8s3av00qzqfjvyyu7zvp8",
+    bsEventId: "cmuy8s3av00qzqfjvyyu7zvp8",
+    title: "1-Hour Backwater Kayak Tour",
+    subtitle: "Mulki, Udupi 1 hour kayak tour | student & group discounts",
+    duration: "1 Hour",
+    price: 400,
     advance: 100,
-    schedule: "6:00 AM | 9:00 AM | 3:30 PM",
-    image: "/assets/intro_kayak.jpg",
-    summary: "Paddle around the isolated Shambhavi river island, take a swim dip, and catch the sunset.",
-    includes: "Kayak, paddle, lifejacket, guide"
+    venuePay: 300,
+    studentPrice: 300,
+    studentAdvance: 100,
+    studentVenuePay: 200,
+    schedule: "6:30 AM (Sunrise) | 7:30 AM | 9:00 AM | 11:30 AM | 3:30 PM & 4:00 PM (Sunset)",
+    image: "/assets/bs_kayak_1hr.jpg",
+    bookingUrl: "https://bookingsutra.com/kayakboy-surf-club/events/cmuy8s3av00qzqfjvyyu7zvp8",
+    summary: "Paddle through calm Shambhavi river backwaters and mangroves around the isolated island. Free action photos included.",
+    includes: "Stable sit-on-top kayak, paddle, certified life jacket, guide, free action photos",
+    highlights: [
+      "Student special: ₹300/person with student ID (₹100 advance)",
+      "Group discount: 5% off for 5+ people, 10% off for 10+ people",
+      "Calm flatwater: safe for families & non-swimmers",
+      "Free high-res digital photos taken by our guides"
+    ]
   },
   {
-    id: "kayak-explore",
-    title: "Explore & Overnight Camp",
-    duration: "2 Days / 1 Night (20 km)",
-    price: 2700,
-    advance: 800,
-    schedule: "Departs 9:00 AM",
-    image: "/assets/explore_kayak.jpg",
-    summary: "Paddle upriver to our private 2-acre estate. Camp overnight with woodfired pizza and campfire.",
-    includes: "Kayak gear, tent stay, dinner & breakfast, dry bag"
+    id: "cmuy8s56o00z2qfjvie2yez8f",
+    bsEventId: "cmuy8s56o00z2qfjvie2yez8f",
+    title: "Wake Surfing using Motorboat",
+    subtitle: "Fast-track wave riding with boat-assisted continuous wake",
+    duration: "30 Mins (15m land + 15m water)",
+    price: 885,
+    advance: 200,
+    venuePay: 685,
+    schedule: "Custom morning & afternoon slots (min 2 participants)",
+    image: "/assets/bs_wake_surfing.jpg",
+    bookingUrl: "https://bookingsutra.com/kayakboy-surf-club/events/cmuy8s56o00z2qfjvie2yez8f",
+    summary: "Ride continuous, endless boat wake waves on the calm Shambhavi river. Perfect for dialing in balance without paddling fatigue.",
+    includes: "Motorboat tow, wake surfboard, impact life vest, coaching lesson",
+    highlights: [
+      "Total: ₹750 + 18% GST (₹885) • ₹200 advance deposit",
+      "15-minute land briefing + 15-minute river tow time",
+      "Requires minimum 2 participants to launch",
+      "Great cross-training for ocean surfing balance"
+    ]
   },
   {
-    id: "kayak-challenger",
-    title: "Challenger 20 km",
-    duration: "Full Day (20 km)",
-    price: 2000,
-    advance: 600,
-    schedule: "7:00 AM – 6:00 PM",
-    image: "/assets/challenge_kayak.png",
-    summary: "Full-day backwater endurance paddle to Palimar Dam with traditional coastal home lunch.",
-    includes: "Expedition kayak, snacks, local lunch, guide"
+    id: "cmuy8s60c00z5qfjvv3421saj",
+    bsEventId: "cmuy8s60c00z5qfjvv3421saj",
+    title: "Bioluminescence Kayaking",
+    subtitle: "Magical night paddle through glowing blue-green waters",
+    duration: "45 min – 1 Hour (Night)",
+    price: 750,
+    advance: 250,
+    venuePay: 500,
+    tag: "Seasonal (Jan–Apr)",
+    schedule: "Night departure (dates & timings based on tide/moon)",
+    image: "/assets/bs_bioluminescence.jpg",
+    bookingUrl: "https://bookingsutra.com/kayakboy-surf-club/events/cmuy8s60c00z5qfjvv3421saj",
+    summary: "Paddle under starry night skies through calm Shambhavi backwaters glowing with natural blue-green bioluminescent phytoplankton.",
+    includes: "Night kayak, paddle, certified life jacket, river safety guides, dry bag",
+    highlights: [
+      "Active season: January to April only",
+      "₹250 online advance + ₹500 on spot at check-in",
+      "Calm dark river backwaters away from city glare",
+      "Guided by certified river safety instructors"
+    ]
   }
 ];
 
@@ -162,18 +232,18 @@ export const FAQS = [
   },
   {
     q: "Can I work remotely while learning to surf?",
-    a: "Yes. Surf sessions run 6:30 AM – 9:30 AM. After 10:00 AM, guests use our shaded riverside workspace with fast Wi-Fi and power outlets."
+    a: "Yes. Surf sessions run 6:30 AM – 11:00 AM. After sessions, guests use our shaded riverside workspace with fast fiber Wi-Fi and power outlets."
   },
   {
     q: "What are the dorm and room options?",
-    a: "We have air-conditioned mixed dorms (8–14 beds with personal lockers and attached baths), a female-only dorm, private A/C rooms, and riverside tents."
+    a: "We have air-conditioned mixed dorms, dedicated female-only dorms, private A/C rooms with or without balconies, and riverside stays."
   },
   {
     q: "How does payment work?",
-    a: "Pay a deposit online to hold your spot. Settle the remaining balance at check-in via UPI. We do not accept cash."
+    a: "You pay a booking advance deposit online via BookingSutra. Settle the remaining balance at check-in via UPI. We do not accept cash."
   },
   {
     q: "How do I reach Mulki?",
-    a: "We are in Mulki, Karnataka (30 km north of Mangalore / 30 km south of Udupi). Auto-rickshaws are easily available from Mulki Bus Stand (1.5 km) and Mulki Railway Station (5.5 km)."
+    a: "We are located at River Shambhavi in Mulki, Karnataka (30 km north of Mangalore / 30 km south of Udupi). Auto-rickshaws are easily available from Mulki Bus Stand (1.5 km) and Mulki Railway Station (5.5 km)."
   }
 ];
