@@ -2,8 +2,9 @@
 
 import React, { useState } from 'react';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
+import { BOOKINGSUTRA_CLUB_URL } from '../data/courses';
 
-export default function Navbar({ onOpenBooking }) {
+export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const links = [
@@ -59,22 +60,27 @@ export default function Navbar({ onOpenBooking }) {
             WhatsApp +91 8722846295
           </a>
 
-          <button
-            onClick={() => onOpenBooking()}
-            className="bg-slate-900 hover:bg-slate-800 text-white font-medium text-xs px-4 py-2.5 rounded-full transition-colors cursor-pointer"
+          <a
+            href={BOOKINGSUTRA_CLUB_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="bg-slate-900 hover:bg-slate-800 text-white font-medium text-xs px-4 py-2.5 rounded-full transition-colors cursor-pointer inline-flex items-center gap-1"
           >
-            Book a Slot
-          </button>
+            <span>Book on BookingSutra</span>
+            <ArrowUpRight className="w-3.5 h-3.5" />
+          </a>
         </div>
 
         {/* Mobile Hamburger */}
         <div className="flex md:hidden items-center gap-2">
-          <button
-            onClick={() => onOpenBooking()}
+          <a
+            href={BOOKINGSUTRA_CLUB_URL}
+            target="_blank"
+            rel="noreferrer"
             className="bg-slate-900 text-white font-medium text-xs px-3.5 py-1.5 rounded-full sm:hidden cursor-pointer"
           >
             Book
-          </button>
+          </a>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="p-1.5 text-slate-700 hover:text-slate-900 cursor-pointer"
@@ -99,15 +105,15 @@ export default function Navbar({ onOpenBooking }) {
             </a>
           ))}
           <div className="pt-2 border-t border-[#EAE6DF] flex flex-col gap-2">
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenBooking();
-              }}
-              className="w-full bg-slate-900 text-white font-medium text-xs py-2.5 rounded-xl cursor-pointer"
+            <a
+              href={BOOKINGSUTRA_CLUB_URL}
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="w-full bg-slate-900 text-white font-medium text-xs py-2.5 rounded-xl text-center block cursor-pointer"
             >
-              Book a Course / Trip
-            </button>
+              Book on BookingSutra ↗
+            </a>
             <a
               href="https://wa.me/918722846295"
               target="_blank"

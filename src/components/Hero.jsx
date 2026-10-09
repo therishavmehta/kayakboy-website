@@ -1,8 +1,8 @@
 import React from 'react';
 import { ArrowRight, MapPin } from 'lucide-react';
-import { PRESS_ITEMS } from '../data/courses';
+import { PRESS_ITEMS, BOOKINGSUTRA_CLUB_URL } from '../data/courses';
 
-export default function Hero({ onOpenBooking, onScrollTo }) {
+export default function Hero({ onScrollTo }) {
   return (
     <section className="relative pt-12 pb-16 md:pt-20 md:pb-24 border-b border-[#EAE6DF] overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -30,13 +30,15 @@ export default function Hero({ onOpenBooking, onScrollTo }) {
             </p>
 
             <div className="flex flex-wrap items-center gap-3 mb-10">
-              <button
-                onClick={() => onOpenBooking()}
+              <a
+                href={BOOKINGSUTRA_CLUB_URL}
+                target="_blank"
+                rel="noreferrer"
                 className="bg-slate-900 hover:bg-slate-800 text-white font-medium text-sm px-6 py-3.5 rounded-full shadow-sm transition-all cursor-pointer flex items-center gap-2"
               >
-                <span>Book a Lesson or Stay</span>
+                <span>Book on BookingSutra</span>
                 <ArrowRight className="w-4 h-4" />
-              </button>
+              </a>
 
               <button
                 onClick={() => onScrollTo('surfing')}

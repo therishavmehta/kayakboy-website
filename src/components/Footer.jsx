@@ -3,7 +3,7 @@
 import React from 'react';
 import { ArrowUp } from 'lucide-react';
 
-export default function Footer({ onOpenBooking }) {
+export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };

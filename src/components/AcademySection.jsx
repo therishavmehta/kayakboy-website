@@ -2,7 +2,7 @@ import React from 'react';
 import { PRO_ACADEMY } from '../data/courses';
 import { ArrowRight } from 'lucide-react';
 
-export default function AcademySection({ onSelectAcademyLevel }) {
+export default function AcademySection() {
   return (
     <section id="academy" className="py-16 sm:py-24 border-b border-[#EAE6DF] bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -46,13 +46,15 @@ export default function AcademySection({ onSelectAcademyLevel }) {
                 </p>
               </div>
 
-              <button
-                onClick={() => onSelectAcademyLevel(level)}
-                className="w-full bg-white hover:bg-slate-900 hover:text-white text-slate-800 font-medium text-xs py-2 px-3 rounded-xl border border-slate-300 transition-all cursor-pointer flex items-center justify-center gap-1"
+              <a
+                href={`https://wa.me/918722846295?text=${encodeURIComponent(`Hi KayakBoy! I am interested in inquiring about ${level.level}: ${level.title} (₹${level.price.toLocaleString()}). Could you share the upcoming batch schedule?`)}`}
+                target="_blank"
+                rel="noreferrer"
+                className="w-full bg-white hover:bg-slate-900 hover:text-white text-slate-800 font-medium text-xs py-2.5 px-3 rounded-xl border border-slate-300 transition-all flex items-center justify-center gap-1 shadow-xs"
               >
-                <span>Enroll (₹{level.price.toLocaleString()})</span>
+                <span>Inquire via WhatsApp</span>
                 <ArrowRight className="w-3 h-3" />
-              </button>
+              </a>
             </div>
           ))}
         </div>

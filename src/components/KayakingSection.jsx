@@ -2,7 +2,7 @@ import React from 'react';
 import { KAYAK_TRIPS, BOOKINGSUTRA_CLUB_URL } from '../data/courses';
 import { ArrowRight, Clock, Sparkles, ExternalLink } from 'lucide-react';
 
-export default function KayakingSection({ onSelectKayakTrip }) {
+export default function KayakingSection() {
   return (
     <section id="kayaking" className="py-16 sm:py-24 border-b border-[#EAE6DF] bg-[#FAF8F5]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -93,23 +93,16 @@ export default function KayakingSection({ onSelectKayakTrip }) {
                 </div>
               </div>
 
-              {/* Card Actions */}
-              <div className="p-6 pt-0 space-y-2">
-                <button
-                  onClick={() => onSelectKayakTrip(trip)}
-                  className="w-full bg-slate-900 hover:bg-slate-800 text-white font-medium text-xs py-2.5 px-4 rounded-xl transition-all cursor-pointer flex items-center justify-center gap-1.5"
-                >
-                  <span>Book Activity</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </button>
-
+              {/* Card Action - Direct BookingSutra */}
+              <div className="p-6 pt-0">
                 <a
                   href={trip.bookingUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-full block text-center text-[11px] font-medium text-slate-500 hover:text-slate-900 py-1 transition-colors"
+                  className="w-full bg-slate-900 hover:bg-slate-800 text-white font-medium text-xs py-3 px-4 rounded-xl transition-all flex items-center justify-center gap-1.5 shadow-xs"
                 >
-                  Direct Book on BookingSutra ↗
+                  <span>Book on BookingSutra</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
                 </a>
               </div>
 

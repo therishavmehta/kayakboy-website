@@ -2,7 +2,7 @@ import React from 'react';
 import { SURF_COURSES, BOOKINGSUTRA_CLUB_URL } from '../data/courses';
 import { ArrowRight, Check, ExternalLink } from 'lucide-react';
 
-export default function SurfingSection({ onSelectCourse }) {
+export default function SurfingSection() {
   return (
     <section id="surfing" className="py-16 sm:py-24 border-b border-[#EAE6DF]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -19,7 +19,7 @@ export default function SurfingSection({ onSelectCourse }) {
           </div>
           <div className="mt-3 sm:mt-0 text-left sm:text-right">
             <p className="text-sm text-slate-600 max-w-md">
-              Morning ocean waves at Mulki's shallow sandbar. Online reservation via BookingSutra.
+              Morning ocean waves at Mulki's shallow sandbar. All bookings managed exclusively via BookingSutra.
             </p>
             <a
               href={BOOKINGSUTRA_CLUB_URL}
@@ -105,23 +105,16 @@ export default function SurfingSection({ onSelectCourse }) {
                   </div>
                 </div>
 
-                {/* Card Actions */}
-                <div className="p-5 pt-0 space-y-2">
-                  <button
-                    onClick={() => onSelectCourse(course)}
-                    className="w-full bg-slate-900 hover:bg-slate-800 text-white font-medium text-xs py-2.5 px-3 rounded-xl transition-colors cursor-pointer flex items-center justify-center gap-1.5"
-                  >
-                    <span>Reserve Spot</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </button>
-
+                {/* Card Action - Direct BookingSutra */}
+                <div className="p-5 pt-0">
                   <a
                     href={course.bookingUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="w-full block text-center text-[11px] font-medium text-slate-500 hover:text-slate-900 py-1 transition-colors"
+                    className="w-full bg-slate-900 hover:bg-slate-800 text-white font-medium text-xs py-3 px-3 rounded-xl transition-colors flex items-center justify-center gap-1.5 shadow-xs"
                   >
-                    Direct Book on BookingSutra ↗
+                    <span>Book on BookingSutra</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
                   </a>
                 </div>
 
