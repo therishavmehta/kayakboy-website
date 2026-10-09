@@ -1,6 +1,6 @@
 import React from 'react';
 import { KAYAK_TRIPS, BOOKINGSUTRA_CLUB_URL } from '../data/courses';
-import { ArrowRight, Clock, Sparkles, ExternalLink } from 'lucide-react';
+import { Clock, MapPin, ArrowRight, ExternalLink } from 'lucide-react';
 
 export default function KayakingSection() {
   return (
@@ -41,65 +41,53 @@ export default function KayakingSection() {
               className="bg-white border border-[#EAE6DF] rounded-2xl overflow-hidden flex flex-col justify-between hover:border-slate-300 transition-colors shadow-xs"
             >
               <div>
-                {/* Photo & Badges */}
-                <div className="relative h-52 bg-slate-100 overflow-hidden">
+                {/* Photo (Aspect 16/10 matching BookingSutra) */}
+                <div className="relative aspect-[16/10] w-full bg-slate-100 overflow-hidden">
                   <img
                     src={trip.image}
                     alt={trip.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                   />
-                  <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-md text-slate-800 text-[11px] font-bold px-2.5 py-1 rounded-md flex items-center gap-1">
-                    <Clock className="w-3 h-3 text-slate-500" />
-                    {trip.duration}
-                  </div>
-                  {trip.tag && (
-                    <div className="absolute top-3 right-3 bg-slate-900 text-white text-[10px] font-bold px-2.5 py-1 rounded-md flex items-center gap-1">
-                      <Sparkles className="w-3 h-3 text-amber-300" />
-                      {trip.tag}
-                    </div>
-                  )}
                 </div>
 
-                <div className="p-6">
-                  {/* Title & Price */}
-                  <div className="flex items-baseline justify-between mb-2 gap-2">
-                    <h3 className="text-lg font-bold font-heading text-slate-900">
-                      {trip.title}
-                    </h3>
-                    <div className="text-right shrink-0">
-                      <span className="text-xl font-bold text-slate-900 font-heading block">
-                        ₹{trip.price}
-                      </span>
-                      <span className="text-[10px] text-slate-500 block">
-                        ₹{trip.advance} online deposit
-                      </span>
-                    </div>
+                <div className="p-5 flex flex-col gap-2">
+                  <h3 className="text-base font-bold font-heading text-slate-900 leading-snug">
+                    {trip.title}
+                  </h3>
+
+                  <div className="flex items-center gap-3 text-xs text-slate-500">
+                    <span className="flex items-center gap-1">
+                      <Clock className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                      <span>{trip.duration}</span>
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <MapPin className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                      <span>{trip.location}</span>
+                    </span>
                   </div>
 
-                  <p className="text-xs text-slate-600 leading-relaxed mb-4">
-                    {trip.summary}
+                  <p className="text-xs text-slate-600 leading-relaxed mt-1">
+                    {trip.description}
                   </p>
 
-                  {/* Highlights and Inclusions */}
-                  <div className="text-[11px] text-slate-600 bg-[#FAF8F5] p-3 rounded-xl border border-[#EAE6DF] space-y-1.5 mb-2">
-                    <div><strong>Timing:</strong> {trip.schedule}</div>
-                    <div><strong>Includes:</strong> {trip.includes}</div>
-                    {trip.highlights && trip.highlights[0] && (
-                      <div className="text-emerald-700 font-medium pt-1 border-t border-[#EAE6DF]">
-                        {trip.highlights[0]}
-                      </div>
-                    )}
+                  <div className="mt-3 pt-3 border-t border-[#EAE6DF]">
+                    <span className="text-lg font-extrabold text-slate-900 font-heading block">
+                      ₹{trip.price.toLocaleString()}
+                    </span>
+                    <span className="text-[11px] text-slate-500 block mt-0.5">
+                      {trip.advanceNote}
+                    </span>
                   </div>
                 </div>
               </div>
 
               {/* Card Action - Direct BookingSutra */}
-              <div className="p-6 pt-0">
+              <div className="p-5 pt-0">
                 <a
                   href={trip.bookingUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-full bg-slate-900 hover:bg-slate-800 text-white font-medium text-xs py-3 px-4 rounded-xl transition-all flex items-center justify-center gap-1.5 shadow-xs"
+                  className="w-full bg-slate-900 hover:bg-slate-800 text-white font-medium text-xs py-2.5 px-3 rounded-xl transition-all flex items-center justify-center gap-1.5 shadow-xs"
                 >
                   <span>Book on BookingSutra</span>
                   <ArrowRight className="w-3.5 h-3.5" />
