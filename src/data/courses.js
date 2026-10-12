@@ -135,23 +135,39 @@ export const PRESS_ITEMS = [
 
 export const FAQS = [
   {
-    q: "Do I need to know swimming?",
-    a: "No. Beginner surf lessons are conducted in shallow, waist-deep water on a sandy bed with instructors next to you. All kayakers wear certified high-buoyancy life jackets."
+    q: "Do I need to know swimming to learn surfing or kayaking?",
+    a: "No. Beginner surf lessons are conducted in waist-deep water on a gentle, shallow sandy sandbar with instructors beside you at all times. For kayaking, all guests wear certified high-buoyancy life jackets."
+  },
+  {
+    q: "What is the best season for surfing and kayaking in Mulki?",
+    a: "The peak season runs from September through May with warm, clean water and gentle ocean waves. Bioluminescence night kayaking runs from January to April. Surf sessions pause during the heavy monsoon swell (June to August)."
   },
   {
     q: "Can I work remotely while learning to surf?",
-    a: "Yes. Surf sessions run 6:30 AM – 11:00 AM. After sessions, guests use our shaded riverside workspace with fast fiber Wi-Fi and power outlets."
+    a: "Yes. Surf sessions run early in the morning (6:30 AM – 10:30 AM). Guests work remotely throughout the afternoon from our shaded riverside clubhouse equipped with high-speed fiber Wi-Fi and power outlets."
   },
   {
-    q: "What are the dorm and room options?",
-    a: "We have air-conditioned mixed dorms, dedicated female-only dorms, private A/C rooms with or without balconies, and riverside stays."
+    q: "What should I pack and wear for water sessions?",
+    a: "Wear quick-dry rashguards, swimwear, or athletic boardshorts. We provide all surfboards, kayaks, paddles, and life jackets. Bring high-SPF water-resistant sunscreen, sunglasses with retainers, and a reusable water bottle."
   },
   {
-    q: "How does payment work?",
-    a: "You pay a booking advance deposit online via BookingSutra. Settle the remaining balance at check-in via UPI. We do not accept cash."
+    q: "What are the dorm and room accommodation options?",
+    a: "We offer air-conditioned mixed dorms, dedicated female-only dorms, and private A/C rooms with en-suite bathrooms. All stay packages include full access to the ice bath, surf fitness gym, skate ramp, and co-working spaces."
   },
   {
-    q: "How do I reach Mulki?",
-    a: "We are located at River Shambhavi in Mulki, Karnataka (30 km north of Mangalore / 30 km south of Udupi). Auto-rickshaws are easily available from Mulki Bus Stand (1.5 km) and Mulki Railway Station (5.5 km)."
+    q: "How does payment and booking work?",
+    a: "Reserve your slot online through BookingSutra by paying an advance deposit. The remaining balance is paid at check-in via UPI or digital transfer. We operate on a 100% cashless system and do not accept cash."
+  },
+  {
+    q: "How do I reach KayakBoy Surf Club in Mulki?",
+    a: "We are located along River Shambhavi in Mulki, Karnataka (30 km north of Mangalore and 30 km south of Udupi). Auto-rickshaws are available from Mulki Bus Stand (1.5 km) and Mulki Railway Station (5.5 km). Mangalore International Airport (IXE) is 30 km away."
+  },
+  {
+    q: "Are lessons suitable for complete beginners and kids?",
+    a: "Yes! Over 90% of our students are first-time surfers and kayakers. The shallow sandbar and protected river backwaters make Mulki one of the safest learning locations in India. Kids can participate with parent/guardian consent."
+  },
+  {
+    q: "When can I experience Bioluminescence Kayaking?",
+    a: "Bioluminescence kayaking is seasonal and occurs between January and April when dinoflagellates naturally glow neon-blue in River Shambhavi backwaters during dark, clear night skies."
   }
 ];
